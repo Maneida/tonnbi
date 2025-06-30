@@ -120,3 +120,61 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+##################################################################################
+
+### THIRD PARTY PACKAGES
+
+"""
+INSTALLED_APPS += [
+    'wagtail',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+]
+"""
+
+### CORE apps 
+
+INSTALLED_APPS += [
+    'core.accounts', #created
+    'core.notifications', #created
+    'core.search', #created
+]
+
+# For ACCOUNTS app
+
+
+
+
+# For NOTIFICATIONS app
+
+
+
+### COMMERCE APPS
+
+"""
+INSTALLED_APPS += [
+    'commerce.products',
+    'commerce.marketplace',
+    'commerce.orders',
+    'commerce.payments',
+    'commerce.shipping',
+    'commerce.offers',
+]
+"""
+
+### CONTENT APPS
+"""
+INSTALLED_APPS += [
+    'content.videos',
+    'content.tagging',
+    'content.social',
+    'content.discovery',
+    'content.live_selling',
+    'content.blog',
+]
+"""
+
